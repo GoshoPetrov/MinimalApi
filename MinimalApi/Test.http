@@ -1,0 +1,29 @@
+﻿@host = http://localhost:5119
+
+### 1. Get all geography
+GET {{host}}/api/geography
+Accept: application/json
+
+###
+
+### 2. Get geography by ID
+GET {{host}}/api/geography/1
+Accept: application/json
+
+###
+
+### 3. Create geography
+POST {{host}}/api/geography
+Content-Type: application/json
+
+{
+  "key": "country",
+  "value": "Italy"
+}
+
+###
+
+### 4. Delete geography
+DELETE {{host}}/api/geography/9
+
+###
